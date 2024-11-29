@@ -60,4 +60,5 @@ body {
 }
 
 #existing {
-  display: no
+  display: none;
+}
