@@ -1,4 +1,4 @@
-/ On page load, check if user credentials are saved
+// On page load, check if user credentials are saved
 window.onload = function () {
   const storedUsername = localStorage.getItem("username");
   const storedPassword = localStorage.getItem("password");
