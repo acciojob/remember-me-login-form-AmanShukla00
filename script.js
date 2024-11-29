@@ -1,4 +1,4 @@
-// On page load, check if user credentials are saved
+  // On page load, check if user credentials are saved
 window.onload = function () {
   const storedUsername = localStorage.getItem("username");
   const storedPassword = localStorage.getItem("password");
@@ -24,13 +24,13 @@ document.getElementById("loginForm").onsubmit = function (event) {
     localStorage.removeItem("password");
   }
 
-  alert(⁠ Logged in as ${username} ⁠);
+  alert(`Logged in as ${username}`);
 };
 
 // Handle existing user button click
 document.getElementById("existing").onclick = function () {
   const storedUsername = localStorage.getItem("username");
   if (storedUsername) {
-    alert(⁠ Logged in as ${storedUsername} ⁠);
+    alert(`Logged in as ${storedUsername}`);
   }
 };
